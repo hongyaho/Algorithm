@@ -1,7 +1,7 @@
 import java.util.Scanner;
 import java.util.Stack;
-
-public class ReverseWords {
+// 단어 뒤집기
+public class BOJ_9093 {
 
     public static void main(String args[]) {
         Scanner scanner = new Scanner(System.in);

@@ -1,6 +1,7 @@
 import java.util.Scanner;
 
-public class ArrayStack {
+// 스택
+public class BOJ_10828 {
     int[] ArrayStack = new int[1000];
     int size = 0;
 
@@ -39,7 +40,7 @@ public class ArrayStack {
     }
 
     public static void main(String args[]) {
-        ArrayStack s = new ArrayStack();
+        BOJ_10828 s = new BOJ_10828();
 
         int num;
         Scanner scanner = new Scanner(System.in);

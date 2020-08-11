@@ -1,0 +1,44 @@
+import java.util.Scanner;
+import java.util.Stack;
+
+// 괄호 짝 맞는지
+// ##1)  왜 n-1회 돌아가니,,,,,
+// ##2)  몇번할껀지만 쳐도 NO 나옴(size 0이면 출력돼서)
+public class BOJ_9012 {
+    public static void main(String args[]) {
+        Scanner scanner = new Scanner(System.in);
+        int num = scanner.nextInt();
+
+
+        while (num != 0) {
+            Stack stack = new Stack<>();
+            String uinput = scanner.nextLine();
+            int size = 0;
+
+            for (int i = 0; i < uinput.length(); i++) {
+                if (uinput.charAt(i) == '(') {
+                    size --;
+                    while (!stack.empty()) {
+                        stack.pop();
+                        //size --;  ##여기다 넣어노니까 empty일땐 -- 안먹혀서 NO로 떴음 으이구##
+                    }
+                } else if (uinput.charAt(i) == ')') {
+                    stack.push(uinput.charAt(i));
+                    size++;
+                }
+
+            }
+
+            if(size==0 ) {
+                System.out.println("YES");
+            }
+            else {
+                System.out.println("NO");
+            }
+            num--;
+        }
+    }
+
+}
+
+// ### 이 문제는 스택 안쓰고 size 변수만 써서 풀어도 될듯!!
