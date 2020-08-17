@@ -1,3 +1,5 @@
+package DataStructure;
+
 import java.util.Scanner;
 import java.util.Stack;
 
@@ -27,7 +29,6 @@ public class BOJ_9012 {
                     stack.push(uinput.charAt(i));
                     size++;  //*****(line 23)
                 }
-
             }
 
             if(size==0 ) {
@@ -39,7 +40,6 @@ public class BOJ_9012 {
             num--;
         }
     }
-
 }
 
 // ### 이 문제는 스택 안쓰고 size 변수만 써서 풀어도 될듯!!

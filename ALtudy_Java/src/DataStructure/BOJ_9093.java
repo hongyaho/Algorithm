@@ -1,3 +1,5 @@
+package DataStructure;
+
 import java.util.Scanner;
 import java.util.Stack;
 // 단어 뒤집기
@@ -5,7 +7,7 @@ public class BOJ_9093 {
 
     public static void main(String args[]) {
         Scanner scanner = new Scanner(System.in);
-        int num = Integer.parseInt(scanner.nextLine().charAt(0)+""); //*** 원래 코드 : int num = nextInt()
+        int num = Integer.parseInt(scanner.nextLine()); //*** 원래 코드 : int num = nextInt()
 
         /* 문제 : while문이 n-1번 돌아갔음 + for문 건너뛰고 개행 들어감 (line 33)
         // --> WHY? nextInt 와 nextLine 같이 써서 n뒤에 있는 '\n'(빈 문자열 "")이 input에 들어감
@@ -31,6 +33,7 @@ public class BOJ_9093 {
                     stack.push(uinput.charAt(j));
                 }
             }
+
             System.out.println();
         }
     }
