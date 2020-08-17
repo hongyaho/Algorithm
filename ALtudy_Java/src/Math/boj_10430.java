@@ -13,6 +13,5 @@ public class boj_10430 {
         System.out.println(((A%C) + (B%C))%C);
         System.out.println((A*B)%C);
         System.out.print(((A%C)*(B%C))%C);
-
     }
 }
